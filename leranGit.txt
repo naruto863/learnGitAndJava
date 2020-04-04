@@ -1,7 +1,40 @@
 
 # git diff和git diff --staged使用和区别(同git diff --cached)
+	git diff
+		查看工作区和暂存区的差别
+	git diff --staged 
+		查看暂存区和commit(本地仓库)的差别
+	git diff HEAD 
+		查看工作区和commit(本地仓库)的差别
+
+# git rm --cached命令使用场景
+	不小心把日志文件等不需要版本跟踪管理的文件提交到暂存区后使用，
+	此命令把文件从暂存区删除但保留在工作区
+	
+# git log -p -2
+	查看最近2次提交历史信息, -p按补丁格式输出
+
+# git 工作区、暂存区、本地仓库、远程仓库 
+	工作区、暂存区概念理解参考廖雪峰Git教程，同时理解管理修改
+	git commit 从暂存区提交到git本地仓库默认创建的master分支上，HEAD指针指向master分支头结点
+	修改文件 -> git add -> 修改文件 -> git commit后执行git diff HEAD来理解管理修改而非文件
+
+# git stash
 
 
+# git reset
 
+
+# git rebase
+	
+	
+# git解决冲突
+
+	
+# git几种工作流比较
+	
+# pro git 3、7、10章节内容待学习	
+	
+	
 
 
