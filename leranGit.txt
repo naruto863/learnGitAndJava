@@ -20,15 +20,25 @@
 	修改文件 -> git add -> 修改文件 -> git commit后执行git diff HEAD来理解管理修改而非文件
 
 # git stash
-
-
+	主要用于当前分支代码还未完成，又需要切换到其他分支修改紧急的任务
+	处理方式一 当前分支做一次提交，这样的话会有无意义的提交或者如果代码有错误比较麻烦
+	处理方式二 使用git stash
+		git stash会把当前分支所有未提交的修改都保存起来，完成任务后再git stash pop继续之前的任务
+		git stash show -p查看指定stash的diff
+		
 # git reset
-
-
+	git reset只对commit操作前(含)的文件生效
+	git reset --hard	同时撤销工作区和缓存区的修改，HEAD指针倒退   	
+	git reset --mixed(默认)  撤销缓存区的修改，HEAD指针倒退
+	git reset HEAD^  回退所有内容到上一版本
+	git reset HEAD^ a.py  回退a.py到上一版本
+	git reset commitid 	回退到某个版本
+	
 # git rebase
 	
 	
 # git解决冲突
+
 
 	
 # git几种工作流比较

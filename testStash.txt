@@ -3,4 +3,5 @@ git stash
 pulic static void main(String args[]) {
 	String str = "大家好";
 	System.out.println(str);
+	String string = "我正在写一个很厉害的功能，但还没写完";
 }
