@@ -1,0 +1,6 @@
+git stash
+
+pulic static void main(String args[]) {
+	String str = "大家好";
+	System.out.println(str);
+}
